@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Assignment Part A</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        font-family: 'Nunito', sans-serif;
+      }
+      header {
+        background-color: rgb(77, 77, 203);
+        height: 300px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin-left: 50%;
+        margin-right: 2%;
+        font-size: large;
+      }
+      .nav-item-active {
+        background-color: white;
+        color: rgb(77, 77, 203);
+        width: 15%;
+        text-align: center;
+        border-radius: 2.5em;
+        margin-top: 0.5%;
+      }
+      .logo {
+        margin-left: 2%;
+      }
+      .header-text {
+        margin-left: 2%;
+        margin-top: 3%;
+        float: left;
+        color: white;
+        font-size: 32px;
+      }
+      .header-text p {
+        color: wheat;
+        margin-top: 3%;
+        font-size: 20px;
+      }
+      .header-image {
+        float: right;
+        width: 550px;
+        margin-right: 2%;
+      }
+      .container {
+        margin-top: 5%;
+        margin-left: 2%;
+      }
+      .hero-heading {
+        font-size: 40px;
+        font-weight: bolder;
+      }
+      .Ordered-List{
+        font-size: large;
+        color: gray;
+        font-weight: lighter;
+        margin-top: 2%;
+        margin-left:2%;
+      }
+      .button-learn {
+        margin-top: 2%;
+        width: 150px;
+        border-radius: 15px;
+        border: 2px solid gray;
+        padding: 10px;
+        background-color: white;
+        color: rgb(77, 77, 203);;
+      }
+      .button-join {
+        margin-top: 2%;
+        width: 100px;
+        border-radius: 15px;
+        border: none;
+        padding: 10px;
+        background-color: rgb(77, 77, 203);;
+        color: white;
+      }
+      footer{
+        margin-top: 3%;
+        background-color: rgb(77, 77, 203);
+        height: 100%;
+      }
+      .footer-section{
+        display: flex;
+        justify-content: space-around;
+      }
+      .footer-left{
+        display: flex;
+        justify-content: space-between;
+        width: 20%
+      }
+      .footer-logos{
+        height:50%;
+        margin-top:2%;
+      }
+      .footer-right{
+        width: 20%;
+      }
+      .logos-list{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-between;
+        margin-top:2%;
+        color: white;
+       
+      }
+      .list-items{
+        width: 25%;
+        border-right: solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header Starts-->
+    <header>
+      <!--Navigation Bar Starts-->
+      <nav>
+        <!--Navigation Item Lists-->
+        <a class="nav-item">Home</a>
+        <a class="nav-item">APIs</a>
+        <a class="nav-item">Blogs</a>
+        <a class="nav-item">LogIn</a>
+        <a class="nav-item-active">Sign Up</a>
+      </nav>
+      <div>
+        <img class="logo" src="./images/Logo.png" />
+      </div>
+      
+      <div class="header-text">
+        <h2>Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <!-- Image -->
+      <div>
+        <img class="header-image" src="./images/img1.webp" />
+      </div>
+    </header>
+
+    <div class="container">
+      <h1 class="hero-heading">Trending Programming Languages of 2023</h1>
+      <!--Ordered List-->
+      <ol class="Ordered-List">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>Kotlin</li>
+      </ol>
+      <div>
+        <!--Button-->
+        <button class="button-learn">Learn More</button>
+        <button class="button-join">JOIN NOW</button>
+      </div>
+    </div>
+    <!--Footer Section-->
+    <footer>
+      <div class="footer-section">
+        <div class="footer-left">
+          <img class="footer-logos" src="./images/Group 102.png" alt="" />
+          <img class="footer-logos" src="./images/Group 103.png" alt="" />
+          <img class="footer-logos" src="./images/Group 104.png" alt="" />
+        </div>
+        <div class="footer-right">
+          <!--Unordered List-->
+          <ul class="logos-list">
+            <li class="list-items">FAQ</li>
+            <li class="list-items">Business</li>
+            <li class="list-items" style="border-right: none;">Help</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
